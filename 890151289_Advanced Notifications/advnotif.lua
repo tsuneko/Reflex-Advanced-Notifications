@@ -70,7 +70,8 @@ function AdvNotifs:initialize()
 	}
 	icon["Lost Mega Health"] = {
 		icon = "internal/ui/icons/health",
-		color = {60, 80, 255}
+		color = {60, 80, 255},
+		drawx = true
 	}
 	icon["Custom"] = {
 		icon = "internal/ui/icons/CTFflag",
@@ -381,6 +382,20 @@ function AdvNotifs:draw()
 					nvgFillColor(Color(n.icon.color[1],n.icon.color[2],n.icon.color[3],data.textAlpha))
 				end
 				nvgSvg(n.icon.icon, -notifWidth/2+18, -(i-1)*30, 12)
+				
+				-- check if lost mega and draw red X, thanks kyto for drawing functions
+				if n.icon.drawx == true then
+					nvgBeginPath()
+					nvgMoveTo(-notifWidth/2+9, -(i-1)*30-9)
+					nvgLineTo(-notifWidth/2+18+9, -(i-1)*30+9)
+					nvgFillColor(Color(255, 0, 0, data.textAlpha))
+					nvgFill()
+					nvgBeginPath()
+					nvgMoveTo(-notifWidth/2+9, -(i-1)*30+9)
+					nvgLineTo(-notifWidth/2+18+9, -(i-1)*30-9)
+					nvgFillColor(Color(255, 0, 0, data.textAlpha))
+					nvgFill()
+				end
 			end
 			
 			if n.t >= data.notifyDuration-0.2 then -- we fade out from here
