@@ -273,7 +273,7 @@ function AdvNotifs:draw()
 			if item == "Mega Health" then
 				-- do nothing
 			elseif item == "Lost Mega Health" then
-				delaynotify("Mega Health has respawned", 30, icon[item])
+				delaynotify("Mega Health has respawned", 30, icon["Mega Health"]) -- not "Lost Mega Health" or X will be drawn
 			else
 				delaynotify(item.." has respawned", 25, icon[item])
 			end
@@ -300,7 +300,7 @@ function AdvNotifs:draw()
 			if item == "Mega Health" then
 				-- do nothing
 			elseif item == "Lost Mega Health" then
-				delaynotify("Mega Health respawns in "..data.beforeRespawnTimer.."s"..msgtime, 30-data.beforeRespawnTimer, icon[item])
+				delaynotify("Mega Health respawns in "..data.beforeRespawnTimer.."s"..msgtime, 30-data.beforeRespawnTimer, icon["Mega Health"]) -- same as above
 			else
 				delaynotify(item.." respawns in "..data.beforeRespawnTimer.."s"..msgtime, 25-data.beforeRespawnTimer, icon[item])
 			end
@@ -314,9 +314,6 @@ function AdvNotifs:draw()
 	end
 	if lastFrame.hasMega ~= player.hasMega then
 		lastFrame.hasMega = player.hasMega
-	end
-	if lastFrame.hasFlag ~= player.hasFlag then
-		lastFrame.hasFlag = player.hasFlag
 	end
 	lastFrame.time = gameTime
 	
