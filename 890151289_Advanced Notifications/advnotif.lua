@@ -40,7 +40,7 @@ function AdvNotifs:initialize()
 	textColor = Color(255,255,255,255)
 	bgColor = Color(120,120,120,80)
 	
-	widgetCreateConsoleVariable("notify", "string", "Welcome to AdvNotif!")
+	widgetCreateConsoleVariable("notify", "string", "")
 	
 	notifications = {}
 	warmupTimeElapsed = 0
