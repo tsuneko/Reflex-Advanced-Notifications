@@ -1,4 +1,4 @@
-Of course the screenshots were taken with a much larger scale than what you would use.
+Of course the screenshots were taken with a much larger scale and duration than what you would use.
 
 Adds similar functionality to Kytö's [url=http://steamcommunity.com/sharedfiles/filedetails/?id=789028269]Timestamps[/url] but with easier to configure settings (visual widgets menu rather than cvars) and more features. However, Advanced Notifications is designed only for 1v1 and will not tell you when your teammates take items.
 
