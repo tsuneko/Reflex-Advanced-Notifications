@@ -1,7 +1,7 @@
 # Reflex-Advanced-Notifications
 http://steamcommunity.com/sharedfiles/filedetails/?id=890151289
 
-# I removed it from the Steam Workshop after serveral complaints by notable Reflex players
+# I removed it from the Steam Workshop after some complaints :')
 
 ![Image](https://puu.sh/uY47g/15d2c3306e.PNG)
 
