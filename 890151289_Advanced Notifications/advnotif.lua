@@ -333,6 +333,7 @@ function AdvNotifs:draw()
 	end
 	
 	-- Check pending notifications and see if they are ready for deployment
+	
 	if next(pending) ~= nil then
 		for i,n in ipairs(pending) do
 			if n.time <= gameTime then -- add to notifications
