@@ -2,7 +2,7 @@
 
 # I removed Advanced Notifications from the Steam Workshop due to the "Timer" controversy in the Reflex community
 
-The code provided can be used, if you rename the file to "advnotif" and use it as a local mod. Although I have provided the mod here, please do not use it in competitive play (... if anyone still plays anyhow).
+The code provided can be used, if you rename the folder to "Advanved Notifications" and use it as a local mod. Although I have provided the mod here, please do not use it in competitive play (... if anyone still plays anyhow).
 
 # About
 
